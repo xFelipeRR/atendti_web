@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&display=swap');
+.interest-wrapper {
+    background: #091A39;
+    position: relative;
+
+    height: 110vh;
+}
+.background-image-interest {
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+.interest-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    top: 70px;
+}
+
+.interest-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+
+    color: #EEEEEE;
+
+    padding: 20px 0px;
+
+    text-align: center;
+
+    -webkit-animation: fadein 1s;
+}
+
+
+.interest-boxes {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.interest-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 22rem;
+    background: white;
+    padding: 2rem;
+    margin: 0px 20px 20px 20px;
+    
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+.interest-box:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+.interest-description {
+    font-family: 'Rambla', sans-serif;
+    color: #091A39;
+    font-size: 1.2rem;
+
+    padding-top: 20px;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes slideinLTitle {
+    from {
+      margin-left: 30%;
+      
+    }
+  
+    to {
+      margin-left: .2rem;
+      
+    }
+  }

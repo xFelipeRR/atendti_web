@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+.top-footer {
+    background: #FAFAFA;
+}
+
+.top-footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.company .company-name {
+    color: #252B42;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.company .company-doing {
+    color: #737373;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    
+}
+.top-footer-container .company-logo img {
+    width: 150px;
+}
+@media(max-width:469px){
+    .company-name {
+        font-size: 1rem;
+    }
+    .company-doing {
+        font-size: .9rem;
+    }
+    .company-logo img {
+        width: 100px !important;
+    }
+}

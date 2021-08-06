@@ -1,0 +1,148 @@
+$itemGrow: 1.2;
+$duration: 250ms;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+.arrow__btn {
+  display: flex;
+  align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+.title-services {
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white; 
+  background-color: #152543;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.desc-services {
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: white; 
+  background-color: #152543;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,100%);
+  overflow:hidden;
+  scroll-behavior: smooth;
+  background-color: #152543; 
+
+  .services-section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin: 20px 0;
+    
+    .service-img-container {
+      position: relative;
+    }
+
+    .item {
+      padding: 0 2px;
+      transition: $duration all;
+
+      .service {
+        width: 350px;
+        height: 400px;
+      }
+
+      .span-services-title {
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+        font-size: .6rem;
+        font-weight: 500;
+
+        position: absolute;
+        top: 220px;
+        margin-left: 10px;
+      }
+
+      .span-services-desc {
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+        font-size: .7rem;
+        font-weight: 500;
+
+        position: absolute;
+        top: 270px;
+
+        margin-left: 10px;
+      }
+
+      .see-more {
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+        font-size: .7rem;
+        font-weight: 500;
+
+        position: absolute;
+        bottom: 25px;
+        width: 100px;
+
+        text-align: center;
+
+        margin-left: 10px;
+
+        text-decoration: none;
+
+        background: #23A6F0;
+        border-radius: 37px;
+
+        padding: 15px;
+      }
+      
+      &:hover { 
+        margin: 0 40px;
+        transform: scale(1.2);
+      }
+      
+    }
+    
+    .arrow__btn {
+      position: absolute;
+      color: #fff;
+      text-decoration: none;
+      font-size: 6em;
+      /*background:#152543;*/
+      width: 80px;
+      padding: 20px;
+      text-align: center;
+      z-index: 1;
+      
+      &:nth-of-type(1) {
+        top:0; bottom:0; left:0;
+        /*background: linear-gradient(-90deg, #152543 0%, #101c33 100%);*/
+      }
+      &:nth-of-type(2) {
+        top:0; bottom:0; right: 0;
+        /*background: linear-gradient(90deg, #152543 0%, #101c33 100%);*/
+      }
+      
+    }
+    
+  }
+}
+
+// Remove the arrow for Mobile
+/*
+@media only screen and (max-width: 600px) {
+  a.arrow__btn {
+    display:none;
+  }
+}
+*/

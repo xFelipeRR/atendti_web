@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@media (min-width: 1000px) and (max-width: 3000px) {
+    .cards-container {
+        flex-direction: row!important;
+        flex-wrap: wrap;
+    }
+    .service-card {
+        width: 95%!important;
+        height: 220px;
+        padding: 40px!important;
+    }
+
+    .cards-container .service-card img {
+        width: 7rem;
+    }
+    .cards-container .service-title {
+        font-size: 2rem;
+    }
+    .cards-container .service-description {
+        font-size: 1rem;
+    }
+}
+
+.wrapper {
+    background: #091A39;
+}
+
+.home-back {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-icon {
+    width: 4rem;
+    padding: 10px;
+}
+
+.ours-services-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 40px;
+}
+.ours-services-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+
+    color: #EEEEEE;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+
+    background: #F2F2F2;
+    border-radius: 8px;
+
+    padding: 10px;
+    margin: 30px 15px;
+
+    width: 90%;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.service-card img {
+    width: 5rem;
+    margin-right: 10px;
+}
+.service-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: .8rem;
+
+    color: #09152C;
+}
+.service-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: .3rem;
+}
+.nav-header {
+    background-color: #091A39;
+    padding: 2rem;
+    box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.2), 0px 17px 26px rgba(0, 0, 0, 0.14), 0px 6px 32px rgba(0, 0, 0, 0.12);
+
+    display: flex;
+    align-items: center;
+}
+.nav-header a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.links-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 2rem;
+}
+@media(max-width:744px){
+    .links-header {
+        display: none;
+    }
+    .nav-header {
+        flex-direction: row-reverse;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@media (min-width: 100px) and (max-width: 1100px) {
+    
+}
+.founder-words-wrapper {
+    width: 100%;
+    background: linear-gradient(90deg, #091A39 0%, rgba(9, 26, 57, 0.95) 100%);
+    position: relative;
+
+    padding: 50px;
+}
+.founder-words-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.founder-words-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+
+    color: white;
+
+    padding: 15px;
+}
+.founder-words-description-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.founder-words-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+
+    width: 100%;
+
+    padding: 15px;
+}
+.founder-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: underline;
+
+    color: rgb(177, 176, 176);
+    padding: 20px;
+}
+.founder-name-img {
+    width: 150px;
+}
+
+@media(max-width:685px){
+    .founder-words-title {
+        font-size: 1.7rem;
+    }
+    .founder-words-description {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:469px){
+    .company-name {
+        font-size: 1rem;
+    }
+    .company-doing {
+        font-size: .9rem;
+    }
+    .company-logo img {
+        width: 100px !important;
+    }
+}
+

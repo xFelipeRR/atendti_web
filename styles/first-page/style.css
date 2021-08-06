@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+
+            box-sizing: border-box;
+
+            font-family: 'Montserrat', sans-serif;
+        }
+        .menuContainer,
+        .header_links,
+        .header_login,
+        .cta_see_products,
+        .whatsapp_button {
+            display: none;
+        }
+        .menuContainer {
+            transform: translateX(-2000px);
+            transition: .5s;
+
+            width: 100%;
+            height: 100vh;
+        }
+        body {
+            background-image: url('../../img/background img.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+
+            height: 100vh;
+            /*padding: 2rem;*/
+        }
+        div.black-filter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(89.85deg, #000000 0.13%, #000000 0.14%, rgba(0, 0, 0, 0) 99.56%);
+            z-index: -1;
+        }
+        .menu_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 20px;
+            max-width: 97%;
+        }
+        .cta_container {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+        }
+        .cta_title {
+            color: white;
+        }
+        .cta-paragraph {
+            color: white;
+            margin-top: 70px;
+            font-size: 20px;
+        }
+        .cta_button {
+            margin-top: 70px;
+            background: rgb(35, 166, 240);
+            border-radius: 37px;
+            color: white;
+            height: 35px;
+            width: 200px;
+            font-weight: 600;
+            transition: .5s;
+            box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
+        }
+        .cta_button:hover {
+            transition: .5s;
+            background: transparent;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+       
+        @media(min-width: 768px){
+            .header_links,
+            .header_login,
+            .cta_see_products,
+            .whatsapp_button {
+                display: block;
+            }
+            body {
+                /*padding: 1rem;*/
+            }
+            .header_menu {
+                display: none;
+            }
+            .menu_container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                padding: 20px;
+                max-width: 97%;
+            }
+            .header_links a{
+                font-size: 14px;
+                color: white;
+                text-decoration: none;
+                margin: 0px 15px;
+            }
+            .header_links a:hover{
+                text-decoration: underline;
+            }
+            .header_login span {
+                font-size: 15px;
+                color: white;
+                font-weight: 700;
+                margin-right: 10px;
+            }
+            .header_login span:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+            .header_login .register{
+                background: #23A6F0;
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 15px;
+                color: white;
+                font-weight: 500;
+                box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
+            }
+            .register:hover {
+                transition: .5s;
+                background: rgb(35, 166, 240,0.5);
+                cursor: pointer;
+            }
+            .cta_container {
+                margin-top: 130px;
+                padding: 0rem 1rem;
+
+                display: flex;
+                flex-direction: column;
+                align-items: normal;
+                justify-content: space-between;
+                height: 60%;
+            }
+            .cta_title {
+                font-size: 50px;
+                width: 600px;
+            }
+            .cta-paragraph {
+                margin-top: 0px;
+                font-size: 25px;
+            }
+            .cta_footer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 425px;
+
+                margin-bottom: 40px;
+            }
+            .cta_button {
+                margin-top: 0px;
+                height: 50px;
+                width: 500px;
+                padding: 10px;
+            }
+            .cta_see_products {
+                margin-top: 0px;
+                margin-left: 16px;
+                background: transparent;
+                border-radius: 37px;
+                color: white;
+                height: 50px;
+                width: 100%;
+                font-weight: 600;
+                border: 1px solid white;
+                transition: .5s;
+                box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
+            }
+            .cta_see_products:hover {
+                background: #23A6F0;
+                border: 0;
+                cursor: pointer;
+            }
+            .whatsapp_button {
+                width: 70px;
+                height: 70px;
+                background-color: #23A6F0;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                cursor: pointer;
+                box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.2), 0px 13px 19px rgba(0, 0, 0, 0.14), 0px 5px 24px rgba(0, 0, 0, 0.12);
+            }
+            
+        }
+        @media(min-width: 900px){
+            body {
+                /*padding: 2rem;*/
+            }
+            .header_login span {
+                margin-right: 20px;
+            }
+            .header_links a{
+                font-size: 17px;
+            }
+        }
+        @media(max-width: 768px){
+            .cta_title {
+                font-size: 2.2rem;
+                margin-left: 1rem;
+            }
+            .cta-paragraph {
+                font-size: 1.3rem;
+                margin-left: 1rem;
+            }
+            .cta_button {
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size: 16px;
+            }
+            .header_menu {
+                cursor: pointer;
+            }
+            .on {
+                padding: 2rem;
+                background-color: #091A39;
+                position: fixed;
+
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-around;
+
+                transform: translateX(0);
+                transition: .5s;
+            }
+            .on .close {
+                cursor: pointer;
+            }
+            .menuContainer header {
+                width: 100%;
+                position: relative;
+            }
+
+            .menuContainer nav {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .menuContainer a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+        }
+        @media (min-width: 100px) and (max-width: 1100px){
+            .element {
+                height: auto !important;
+            }
+            .element .element-title {
+                font-size: 1rem !important;
+            }
+            .element-desc {
+                font-size: 1rem !important;
+            }
+                       
+        }
+        @media(max-width: 1182px){
+            .header_links a{
+                font-size: 12px;
+            }
+        }
