@@ -40,39 +40,42 @@
             </div>
 
             <div class="interest-boxes">
-                <a href="produtos.html">
+                <a href="produtos.php?interesse=l">
                     <div class="interest-box">
                         <img src="../img/logistica.png" alt="Logística">
                         <p class="interest-description">Logística</p>
                     </div>
                 </a>
                 
-                <a href="produtos.html">
+                <a href="produtos.php?interesse=m">
                     <div class="interest-box">
                         <img src="../img/manufatura.png" alt="Manufatura">
                         <p class="interest-description">Manufatura</p>
                     </div>
                 </a>
-                <div class="interest-box">
-                    <img src="../img/distribuicao.png" alt="Distribuição">
-                    <p class="interest-description">Distribuição</p>
-                </div>
 
-                <a href="produtos.html">
+                <a href="produtos.php?interesse=d">
+                    <div class="interest-box">
+                        <img src="../img/distribuicao.png" alt="Distribuição">
+                        <p class="interest-description">Distribuição</p>
+                    </div>
+                </a>
+
+                <a href="produtos.php?interesse=p">
                     <div class="interest-box">
                         <img src="../img/customer-service.png" alt="Prestadores de Serviços">
                         <p class="interest-description">Prestadores de Serviços</p>
                     </div>
                 </a>
 
-                <a href="produtos.html">
+                <a href="produtos.php?interesse=f">
                     <div class="interest-box">
                         <img src="../img/financeiro.png" alt="Financeiro">
                         <p class="interest-description">Financeiro</p>
                     </div>
                 </a>
             
-                <a href="produtos.html">
+                <a href="produtos.php?interesse=v">
                     <div class="interest-box">
                         <img src="../img/varejo.png" alt="Varejo">
                         <p class="interest-description">Varejo</p>
