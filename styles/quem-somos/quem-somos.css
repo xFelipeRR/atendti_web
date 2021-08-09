@@ -42,12 +42,29 @@
 
     margin-top: 40px;
 }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes slideinLTitle {
+    from {
+      margin-left: 30%;
+      
+    }
+  
+    to {
+      margin-left: .2rem;
+      
+    }
+  }
 .who-we-are-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 2rem;
 
     color: #0A1B3A;
+
+    -webkit-animation: fadein 1s;
 }
 
 .presentation-container {
@@ -55,6 +72,7 @@
     justify-content: center;
 
     height: 80vh;
+    -webkit-animation: fadein 1s;
 }
 
 .presentation-intern-container {

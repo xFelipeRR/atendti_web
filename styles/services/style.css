@@ -30,7 +30,7 @@ body {
   background-color: #152543;
   text-align: center;
   font-size: 1.2rem;
-  margin-bottom: -60px;
+  margin-bottom: -120px;
 }
 
 .wrapper {
@@ -71,6 +71,27 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.splide {
+  padding: 0em 3em 3em 3em;
+}
+
+.splide__slide img {
+  opacity: 0.7;
+}
+.splide:hover .slider-title {
+  transition: 0.6s;
+  background: #0f2c63;
+}
+.splide:hover .slider-description{
+  transition: 0.6s;
+  background: #ebe8e8;
+  box-shadow: #0c1423 2px 2px 8px;
+}
+.splide:hover img{
+  transition: 0.6s;
+  opacity: 1;
 }
 
 @media (max-width: 1000px) {

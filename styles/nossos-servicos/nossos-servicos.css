@@ -48,6 +48,8 @@
     font-size: 2rem;
 
     color: #EEEEEE;
+
+    -webkit-animation: fadein 1s;
 }
 
 .cards-container{
@@ -56,6 +58,44 @@
     align-items: center;
     flex-direction: column;
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+   @keyframes slideinUp {
+    from {
+      margin-top: -15%;
+      
+    }
+  
+    to {
+      margin-top: 0px;
+      
+    }
+  }
+  @keyframes slideinLTitle {
+    from {
+      margin-left: 30%;
+      
+    }
+  
+    to {
+      margin-left: .2rem;
+      
+    }
+  }
+  @keyframes slideinRTitle {
+    from {
+      margin-left: -30%;
+      
+    }
+  
+    to {
+      margin-right: .2rem;
+      
+    }
+  }
 
 .service-card {
     display: flex;
@@ -68,9 +108,12 @@
     margin: 30px 15px;
 
     width: 90%;
+
+    -webkit-animation: slideinRTitle 1s,fadein 1s;
 }
 .reverse{
     flex-direction: row-reverse;
+    -webkit-animation: slideinLTitle 1s,fadein 1s;
 }
 .service-card img {
     width: 5rem;

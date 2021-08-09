@@ -7,6 +7,7 @@
     <title>Área de Interesses | Atendti</title>
     <link rel="stylesheet" href="../styles/header/header.css">
     <link rel="stylesheet" href="../styles/interest/interest.css">
+    <link rel="stylesheet" href="../styles/header/header-index.css">
 </head>
 <style>
     * {
@@ -20,16 +21,26 @@
     }
 </style>
 <body>
-    <header class="nav-header">
-        <img src="/img/logo-mobile.png" alt="">
-        <nav class="links-header">
-          <a href="index.html">Home</a>
-          <a href="quem-somos.html">Quem somos?</a>
-          <a class="actual-link-header" href="#">Produtos</a>
-          <a href="nossos-servicos.html">Serviços</a>
-          <a href="#">Entre em contato</a>
-        </nav>
-    </header>
+    <header class="menu_container">
+          <img src="../img/menu.svg" alt="Menu" class="header_menu">
+          <img src="../img/logo-mobile.png" alt="logomarca" class="header_logo">
+  
+          <nav class="header_links">
+              <a href="index.html">Home</a>
+              <a href="quem-somos.html">Quem somos?</a>
+              <a href="interesses.php">Produtos</a>
+              <a href="nossos-servicos.html">Serviços</a>
+              <a href="#">Entre em contato</a>
+              <a href="#">Help Desk</a>
+          </nav>
+  
+          <section class="header_login">
+              <span class="login">Entrar</span>
+              <button class="register">
+                  Se registre Agora
+              </button>
+          </section>
+      </header>
 
     <main class="interest-wrapper">
         <img class="background-image-interest" src="../img/programming.png" alt="">
@@ -84,6 +95,18 @@
             </div>
         </div>
     </main>
-    
+    <script>
+
+      const login = document.querySelector('.login')
+      login.addEventListener('click',()=>{
+        window.location.href = 'login.html'
+      })
+
+      const register = document.querySelector('.register')
+      register.addEventListener('click',()=>{
+        window.location.href = 'register.html'
+      })
+
+  </script>
 </body>
 </html>

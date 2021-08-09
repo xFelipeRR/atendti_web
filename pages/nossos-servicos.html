@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AtendTI | Nossos Serviços</title>
     <link rel="stylesheet" href="../styles/nossos-servicos/nossos-servicos.css">
+
+    <link rel="stylesheet" href="../styles/header/header-index.css">
 </head>
 <style>
     * {
@@ -16,16 +18,28 @@
 </style>
 <body>
     <div class="wrapper">
-        <header class="nav-header">
-            <img src="/img/logo-mobile.png" alt="">
-            <nav class="links-header">
-              <a href="#">Home</a>
-              <a href="#">Quem somos?</a>
-              <a href="#">Produtos</a>
-              <a href="#">Serviços</a>
-              <a href="#">Entre em contato</a>
-            </nav>
-        </header>
+        <div class="wrapper">
+            <div class="black-filter"></div>
+            <header class="menu_container">
+                <img src="../img/menu.svg" alt="Menu" class="header_menu">
+                <img src="../img/logo-mobile.png" alt="logomarca" class="header_logo">
+        
+                <nav class="header_links">
+                    <a href="index.html">Home</a>
+                    <a href="quem-somos.html">Quem somos?</a>
+                    <a href="interesses.php">Produtos</a>
+                    <a href="nossos-servicos.html">Serviços</a>
+                    <a href="#">Entre em contato</a>
+                    <a href="#">Help Desk</a>
+                </nav>
+        
+                <section class="header_login">
+                    <span class="login">Entrar</span>
+                    <button class="register">
+                        Se registre Agora
+                    </button>
+                </section>
+            </header>
 
         <section class="ours-services-container">
             <h1 class="ours-services-title">Nossos Serviços</h1>
@@ -131,5 +145,18 @@
         </section>
 
     </div>
+    <script>
+
+        const login = document.querySelector('.login')
+        login.addEventListener('click',()=>{
+          window.location.href = 'login.html'
+        })
+  
+        const register = document.querySelector('.register')
+        register.addEventListener('click',()=>{
+          window.location.href = 'register.html'
+        })
+  
+    </script>
 </body>
 </html>
