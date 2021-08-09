@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide-core.min.css">
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/themes/splide-sea-green.min.css">
+    <script src="../node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+</head>
+<style>
+    .splide--draggable>.splide__track>.splide__list>.splide__slide {
+        display: flex!important;
+        justify-content: center!important;
+        align-items: center!important;
+        flex-direction: column;
+    }
+
+    .splide__slide img {
+	width : 50%;
+	height: auto;
+}
+</style>
+<body>
+    <div id="card-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="../img/earth.png">
+                    <h4>Heading 01</h4>
+                    <div>
+                        Description 01
+                    </div>
+                </li>
+                <li class="splide__slide">
+                    <img src="../img/documentacao.png">
+                    <h4>Heading 02</h4>
+                    <div>
+                        Description 02
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+      <script>
+       document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#card-slider', {
+                perPage    : 1,
+                breakpoints: {
+                    600: {
+                        perPage: 1,
+                    }
+                }
+            } ).mount();
+        } );
+    </script>
+   
+
+</body>
+</html>

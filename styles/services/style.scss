@@ -34,11 +34,10 @@ body {
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3,100%);
-  overflow:hidden;
-  scroll-behavior: smooth;
-  background-color: #152543; 
+    background-color: #152543;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
   .services-section {
     width: 100%;
