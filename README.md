@@ -1,2 +1,2 @@
-# atendti_web
- Site institucional da empresa Atendti
+# AtendTI Website
+A institutional web site of the company AtendTI
